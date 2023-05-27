@@ -5,7 +5,7 @@ body {
     margin: 0;
     font-family: 'Prompt', sans-serif;
     color: white;
-    background: #1a1a1d;
+    background: #a7d5ed;
     overflow-x: hidden;
   }
   
@@ -75,7 +75,7 @@ body {
   }
   
   .banner-section {
-    background-color: #4e4e50;
+    background-color: #63bff0;
     height: 200px;
     width: 350vw; /* Set the width to 100% of the viewport width */
     margin-top: -10px; /* Adjust the negative margin to increase the top size */
@@ -85,7 +85,7 @@ body {
   }
   
   .small-banner-section {
-    background-color: #6f2232;
+    background-color: #22a7f0;
     height: 100px;
     width: 350vw; /* Set the width to 100% of the viewport width */
     margin-top: 200px; /* Adjust the negative margin to increase the top size */
@@ -96,7 +96,7 @@ body {
   }
   
   .pink-banner-section {
-    background-color: #c3073f;
+    background-color: #e14b31;
     height: 150px;
     width: 350vw; /* Set the width to 100% of the viewport width */
     margin-top: 20px; /* Adjust the negative margin to increase the top size */
@@ -106,8 +106,19 @@ body {
     justify-content: center; /* Center the content horizontally */
   }
   
-  .dark-blue {
-      background-color: #1c2e4a;
+  .red {
+      background-color: #de6e56;
+  }
+
+  .red-section {
+    background-color: #de6e56;
+    height: 100%;
+    width: 155vw; /* Set the width to 100% of the viewport width */
+    margin-top: 5px; /* Adjust the negative margin to increase the top size */
+    margin-bottom: 5px;
+    display: flex; /* Enable flexbox layout */
+    align-items: center; /* Center the content vertically */
+    justify-content: center; /* Center the content horizontally */
   }
   
   .section_ {
@@ -123,7 +134,7 @@ body {
   }
   
   .box_ {
-    background-color: #971a33;
+    background-color: #de6e56;
     width: 35%; /* Adjust the width as needed */
     padding: 20px;
     border-radius: 10px; /* Add border-radius to create rounded corners */
