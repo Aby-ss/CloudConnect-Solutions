@@ -88,7 +88,7 @@ section {
   background-color: #22a7f0;
   height: 100px;
   width: 350vw; /* Set the width to 100% of the viewport width */
-  margin-top: 20px; /* Adjust the negative margin to increase the top size */
+  margin-top: 250px; /* Adjust the negative margin to increase the top size */
   margin-bottom: 20px;
   display: flex; /* Enable flexbox layout */
   align-items: center; /* Center the content vertically */
@@ -106,15 +106,26 @@ section {
   justify-content: center; /* Center the content horizontally */
 }
 
+.red-banner-section {
+  background-color: #cd3116;
+  height: 150px;
+  width: 350vw; /* Set the width to 100% of the viewport width */
+  margin-top: 20px; /* Adjust the negative margin to increase the top size */
+  margin-bottom: 20px;
+  display: flex; /* Enable flexbox layout */
+  align-items: center; /* Center the content vertically */
+  justify-content: center; /* Center the content horizontally */
+}
+
 .red {
-    background-color: #de6e56;
+  background-color: #de6e56;
 }
 .red-section {
   background-color: #de6e56;
-  height: 100%;
+  height: 150px;
   width: 155vw; /* Set the width to 100% of the viewport width */
-  margin-top: 5px; /* Adjust the negative margin to increase the top size */
-  margin-bottom: 5px;
+  margin-top: 10px; /* Adjust the negative margin to increase the top size */
+  margin-bottom: 10px;
   display: flex; /* Enable flexbox layout */
   align-items: center; /* Center the content vertically */
   justify-content: center; /* Center the content horizontally */
@@ -150,13 +161,22 @@ section {
 .image-section {
   display: flex;
   align-items: center;
+  position: relative;
 }
 
 .image-section img {
   width: 1000px; /* Adjust the width of the image as desired */
-  margin-right: 20px; /* Add some spacing between the image and heading */
+  margin-left: 350px; /* Add some spacing between the image and heading */
 }
 
 .image-section h1 {
-  font-size: 24px; /* Adjust the font size of the heading as desired */
+  font-size: 42px; /* Adjust the font size of the heading as desired */
+  width: 560px;
+}
+
+.second-image {
+  position: absolute;
+  top: 290px; /* Adjust the vertical position (downward) of the second image */
+  right: 60px; /* Adjust the horizontal position (to the right) of the second image */
+  width: 150px; /* Adjust the width of the second image as desired */
 }
