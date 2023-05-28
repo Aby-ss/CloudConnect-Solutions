@@ -1,149 +1,162 @@
 body {
-    transform: scale(0.65);
-    transform-origin: top left;
-    width: 153.846%; /* (1 / 0.75) = 133.33% to maintain original content size */
-    margin: 0;
-    font-family: 'Prompt', sans-serif;
-    color: white;
-    background: #a7d5ed;
-    overflow-x: hidden;
-  }
+  transform: scale(0.65);
+  transform-origin: top left;
+  width: 153.846%; /* (1 / 0.75) = 133.33% to maintain original content size */
+  margin: 0;
+  font-family: 'Prompt', sans-serif;
+  color: white;
+  background: #a7d5ed;
+  overflow-x: hidden;
+}
   
-  h1 {
-      font-size: 4rem;
-      text-align: center; /* Center align the heading */
-      max-width: 800px; /* Limit the maximum width of the heading */
-      margin: 0 auto; /* Center the heading horizontally */
-      max-width: 100%;
-  }
-  
-  p {
-    font-size: 1.5rem;
-    text-align: left; /* Center align the paragraphs */
-    max-width: 1200px; /* Limit the maximum width of the paragraphs */
-    margin: 0 auto; /* Center the paragraphs horizontally */
-  }
-  
-  .larger-image {
-    width: 85%;
-    height: 350px;
-  }
-  
-  .image-bottom {
-    margin-bottom: 250px;
-  }
-  
-  .banner {
-    width: 100%;
-    height: 85%;
-    margin-bottom: 250px;
-  }
-  
-  section {
-      position: relative;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      min-height: 450px;
-      padding-top: 100px;
-  }
-  
-  .short_section {
-      height: 20px;
-  }
-  
-  .paragraph-spacing {
-    margin-bottom: 55px; /* Adjust the value as per your desired spacing */
-  }
-  
-  .header-spacing {
-    margin-bottom: 55px;
-    max-width: 100%;
-  }
-  
-  .center-paragraph {
-    text-align: center;
-  }
-  
-  .longer-section {
-    min-height: 550px;
-    margin-top: 15px;
-  }
-  
-  .tbl-section {
-    max-height: 1650px;
-  }
-  
-  .banner-section {
-    background-color: #63bff0;
-    height: 200px;
-    width: 350vw; /* Set the width to 100% of the viewport width */
-    margin-top: -10px; /* Adjust the negative margin to increase the top size */
-    display: flex; /* Enable flexbox layout */
-    align-items: center; /* Center the content vertically */
-    justify-content: center; /* Center the content horizontally */
-  }
-  
-  .small-banner-section {
-    background-color: #22a7f0;
-    height: 100px;
-    width: 350vw; /* Set the width to 100% of the viewport width */
-    margin-top: 200px; /* Adjust the negative margin to increase the top size */
-    margin-bottom: 20px;
-    display: flex; /* Enable flexbox layout */
-    align-items: center; /* Center the content vertically */
-    justify-content: center; /* Center the content horizontally */
-  }
-  
-  .pink-banner-section {
-    background-color: #e14b31;
-    height: 150px;
-    width: 350vw; /* Set the width to 100% of the viewport width */
-    margin-top: 20px; /* Adjust the negative margin to increase the top size */
-    margin-bottom: 20px;
-    display: flex; /* Enable flexbox layout */
-    align-items: center; /* Center the content vertically */
-    justify-content: center; /* Center the content horizontally */
-  }
-  
-  .red {
-      background-color: #de6e56;
-  }
+h1 {
+  font-size: 4rem;
+  text-align: center; /* Center align the heading */
+  max-width: 800px; /* Limit the maximum width of the heading */
+  margin: 0 auto; /* Center the heading horizontally */
+  max-width: 100%;
+}
 
-  .red-section {
-    background-color: #de6e56;
-    height: 100%;
-    width: 155vw; /* Set the width to 100% of the viewport width */
-    margin-top: 5px; /* Adjust the negative margin to increase the top size */
-    margin-bottom: 5px;
-    display: flex; /* Enable flexbox layout */
-    align-items: center; /* Center the content vertically */
-    justify-content: center; /* Center the content horizontally */
-  }
-  
-  .section_ {
+p {
+  font-size: 1.5rem;
+  text-align: left; /* Center align the paragraphs */
+  max-width: 1200px; /* Limit the maximum width of the paragraphs */
+  margin: 0 auto; /* Center the paragraphs horizontally */
+}
+
+.larger-image {
+  width: 85%;
+  height: 350px;
+}
+
+.image-bottom {
+  margin-bottom: 250px;
+}
+
+.banner {
+  width: 100%;
+  height: 85%;
+  margin-bottom: 250px;
+}
+
+section {
+    position: relative;
     display: flex;
-    justify-content: center; /* Center the boxes horizontally */
-    align-items: center; /* Center the boxes vertically */
-    margin-top: -250px;
-  }
-  
-  .container {
-    display: flex;
-    justify-content: center; /* Center the boxes horizontally within the container */
-  }
-  
-  .box_ {
+    flex-direction: column;
+    align-items: center;
+    min-height: 450px;
+    padding-top: 100px;
+}
+
+.short_section {
+    height: 20px;
+}
+
+.paragraph-spacing {
+  margin-bottom: 55px; /* Adjust the value as per your desired spacing */
+}
+
+.header-spacing {
+  margin-bottom: 55px;
+  max-width: 100%;
+}
+
+.center-paragraph {
+  text-align: center;
+}
+
+.longer-section {
+  min-height: 550px;
+  margin-top: 15px;
+}
+
+.tbl-section {
+  max-height: 1650px;
+}
+
+.banner-section {
+  background-color: #63bff0;
+  height: 200px;
+  width: 350vw; /* Set the width to 100% of the viewport width */
+  margin-top: -10px; /* Adjust the negative margin to increase the top size */
+  display: flex; /* Enable flexbox layout */
+  align-items: center; /* Center the content vertically */
+  justify-content: center; /* Center the content horizontally */
+}
+
+.small-banner-section {
+  background-color: #22a7f0;
+  height: 100px;
+  width: 350vw; /* Set the width to 100% of the viewport width */
+  margin-top: 20px; /* Adjust the negative margin to increase the top size */
+  margin-bottom: 20px;
+  display: flex; /* Enable flexbox layout */
+  align-items: center; /* Center the content vertically */
+  justify-content: center; /* Center the content horizontally */
+}
+
+.pink-banner-section {
+  background-color: #e14b31;
+  height: 150px;
+  width: 350vw; /* Set the width to 100% of the viewport width */
+  margin-top: 20px; /* Adjust the negative margin to increase the top size */
+  margin-bottom: 20px;
+  display: flex; /* Enable flexbox layout */
+  align-items: center; /* Center the content vertically */
+  justify-content: center; /* Center the content horizontally */
+}
+
+.red {
     background-color: #de6e56;
-    width: 35%; /* Adjust the width as needed */
-    padding: 20px;
-    border-radius: 10px; /* Add border-radius to create rounded corners */
-    margin: 35px; /* Adjust the margin to control the spacing */
-  }
-  
-  .larger-button {
-    width: 150px;
-    height: 50px;
-    font-size: 18px;
-    background-color: #950740;
-  }
+}
+.red-section {
+  background-color: #de6e56;
+  height: 100%;
+  width: 155vw; /* Set the width to 100% of the viewport width */
+  margin-top: 5px; /* Adjust the negative margin to increase the top size */
+  margin-bottom: 5px;
+  display: flex; /* Enable flexbox layout */
+  align-items: center; /* Center the content vertically */
+  justify-content: center; /* Center the content horizontally */
+}
+
+.section_ {
+  display: flex;
+  justify-content: center; /* Center the boxes horizontally */
+  align-items: center; /* Center the boxes vertically */
+  margin-top: -250px;
+}
+
+.container {
+  display: flex;
+  justify-content: center; /* Center the boxes horizontally within the container */
+}
+
+.box_ {
+  background-color: #de6e56;
+  width: 35%; /* Adjust the width as needed */
+  padding: 20px;
+  border-radius: 10px; /* Add border-radius to create rounded corners */
+  margin: 35px; /* Adjust the margin to control the spacing */
+}
+
+.larger-button {
+  width: 150px;
+  height: 50px;
+  font-size: 18px;
+  background-color: #950740;
+}
+
+.image-section {
+  display: flex;
+  align-items: center;
+}
+
+.image-section img {
+  width: 1000px; /* Adjust the width of the image as desired */
+  margin-right: 20px; /* Add some spacing between the image and heading */
+}
+
+.image-section h1 {
+  font-size: 24px; /* Adjust the font size of the heading as desired */
+}
