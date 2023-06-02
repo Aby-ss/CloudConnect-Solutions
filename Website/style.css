@@ -117,6 +117,15 @@ section {
   justify-content: center; /* Center the content horizontally */
 }
 
+.FAQ-section{
+  background-color: #cd3116;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  margin: 20px auto;
+  max-width: 600px;  
+}
+
 .red {
   background-color: #de6e56;
 }
