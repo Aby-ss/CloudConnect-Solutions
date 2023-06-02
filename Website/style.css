@@ -118,12 +118,12 @@ section {
 }
 
 .FAQ-section{
-  background-color: #1f93d2;
+  background-color: #1f8fcb;
   border-radius: 10px;
   padding: 20px;
   text-align: center;
   margin: 20px auto;
-  max-width: 2000px;  
+  max-width: 100%;  
 }
 
 .red {
@@ -153,7 +153,7 @@ section {
 }
 
 .box_ {
-  background-color: #de6e56;
+  background-color: #1f8fcb;
   width: 35%; /* Adjust the width as needed */
   padding: 20px;
   border-radius: 10px; /* Add border-radius to create rounded corners */
@@ -188,4 +188,30 @@ section {
   top: 290px; /* Adjust the vertical position (downward) of the second image */
   right: 60px; /* Adjust the horizontal position (to the right) of the second image */
   width: 150px; /* Adjust the width of the second image as desired */
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+  margin: 0;
+  background-color: #1f8fcb;
+}
+
+.custom-section {
+  background-color: #1f8fcb;
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 100%;
+}
+
+.custom-table {
+  max-width: 100%;
+  border-collapse: collapse;
+}
+
+.custom-table td {
+  padding: 10px;
+  border: 1px solid #ffff;
 }
