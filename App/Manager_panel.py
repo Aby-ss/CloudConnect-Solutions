@@ -90,7 +90,21 @@ def Employee_comms():
     graph = asciichartpy.plot(data, {'height': 15, 'width': 10})  # rescales the graph to ±3 lines
     return Panel(graph, border_style = "Bold white", box = box.SQUARE, title = "Communication channels Analysis", title_align="left")
 
+def Employee_database():
+    EDB = Table(title="Employee Database")
+    EDB.add_column(justify="left", header="Name")
+    EDB.add_column(justify="center", header="Department")
+    EDB.add_column(justify="center", header="Current Task")
+    EDB.add_column(justify="center", header="ID number")
+    EDB.add_column(justify="right", header="Status")
+    
+    EDB.add_row("Ansh Jon", "Finances", "Clear May's final statement ✅", "65", "Active")
+    EDB.add_row("Jimmy", "Sales", "Complete the new strategy process ✅", "8", "Offline")
+    EDB.add_row("Alfred", "Banking / Finances", "Clear debt for previous 5 months 🟥", "56", "Active")
+    EDB.add_row("Wayne", "Manufacturing", "Return sales data and add new products to line up 🟥", "88", "Active")
+    EDB.add_row("Jhon", "Security", "Clear up tomorrow event list ✅", "654", "Offline")
 
+    return EDB
 
 
 
@@ -102,6 +116,7 @@ with Live(layout, refresh_per_second=10, screen=True):
         layout["Header"].update(Header())
         layout["Footer"].update(Footer())
         layout["UB_1"].update(Employee_comms())
+        layout["LB_1"].update(Employee_database())
 
         if keyboard.is_pressed("q"):
             exit()
