@@ -3,6 +3,7 @@ import csv
 import time
 from time import sleep
 import math
+import keyboard
 import numpy as np
 import asciichartpy
 
@@ -89,41 +90,20 @@ def Employee_comms():
     graph = asciichartpy.plot(data, {'height': 15, 'width': 10})  # rescales the graph to ±3 lines
     return Panel(graph, border_style = "Bold white", box = box.SQUARE, title = "Communication channels Analysis", title_align="left")
 
-def Teams_stats():
-    job_progress = Progress(
-        "{task.description}",
-        SpinnerColumn(),
-        BarColumn(),
-        TextColumn("[progress.percentage]{task.percentage:>3.0f}%"),
-    )
-    job_progress.add_task("[green]Downloading firm data from cloud")
-    job_progress.add_task("[magenta]Performing finances", total=200)
-    job_progress.add_task("[cyan]Calculating porfits", total=400)
-
-    total = sum(task.total for task in job_progress.tasks)
-    overall_progress = Progress()
-    overall_task = overall_progress.add_task("All Jobs", total=int(total))
-
-    progress_table = Table.grid(expand=True)
-    progress_table.add_row(
-        Panel(
-            overall_progress,
-            title="Overall Progress",
-            border_style="green",
-            padding=(2, 2),
-        ),
-        Panel(job_progress, title="[b]Jobs", border_style="red", padding=(1, 2)),
-    ) 
-    
-    return progress_table
 
 
-layout["Header"].size = 3
-layout["Footer"].size = 3
-layout["Header"].update(Header())
-layout["Footer"].update(Footer())
-layout["UB_1"].update(Employee_comms())
-layout["UB2_1"].update(Teams_stats())
 
 
+with Live(layout, refresh_per_second=10, screen=True):
+    while True:
+        
+        layout["Header"].size = 3
+        layout["Footer"].size = 3
+        layout["Header"].update(Header())
+        layout["Footer"].update(Footer())
+        layout["UB_1"].update(Employee_comms())
+
+        if keyboard.is_pressed("q"):
+            exit()
+            
 print(layout)
