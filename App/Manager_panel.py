@@ -95,14 +95,18 @@ def Employee_database():
     EDB.add_column(justify="left", header="Name")
     EDB.add_column(justify="center", header="Department")
     EDB.add_column(justify="center", header="Current Task")
-    EDB.add_column(justify="center", header="ID number")
+    EDB.add_column(justify="center", header="ID")
     EDB.add_column(justify="right", header="Status")
     
     EDB.add_row("Ansh Jon", "Finances", "Clear May's final statement ✅", "65", "Active")
     EDB.add_row("Jimmy", "Sales", "Complete the new strategy process ✅", "8", "Offline")
-    EDB.add_row("Alfred", "Banking / Finances", "Clear debt for previous 5 months 🟥", "56", "Active")
-    EDB.add_row("Wayne", "Manufacturing", "Return sales data and add new products to line up 🟥", "88", "Active")
+    EDB.add_row("Alfred", "Finances", "Clear debt for previous 5 months 🟥", "56", "Active")
+    EDB.add_row("Wayne", "Manufacturing", "Add new products to line up 🟥", "88", "Active")
     EDB.add_row("Jhon", "Security", "Clear up tomorrow event list ✅", "654", "Offline")
+    EDB.add_row("Emma", "Marketing", "Launch the new advertising campaign ✅", "12", "Active")
+    EDB.add_row("Sarah", "Human Resources", "Conduct employee performance reviews ✅", "25", "Active")
+    EDB.add_row("David", "IT", "Upgrade network infrastructure 🟥", "78", "Offline")
+    EDB.add_row("Linda", "Operations", "Streamline supply chain processes ✅", "36", "Active")
 
     return EDB
 
