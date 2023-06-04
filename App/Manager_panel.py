@@ -110,6 +110,10 @@ def Employee_database():
 
     return EDB
 
+def team_performance():
+    TP_panel = Panel("[b]Finances:[/][b red] 30%[/]\n\n[b]Marketing:[/][b green] 84%[/]\n\n[b]Production:[/][b yellow]5 4%[/]\n\n[b]Human Resources:[/][b green] 90%[/]", title="Team Performance", box = box.SQUARE, border_style = "bold white")
+    
+    return TP_panel
 
 
 with Live(layout, refresh_per_second=10, screen=True):
@@ -121,6 +125,7 @@ with Live(layout, refresh_per_second=10, screen=True):
         layout["Footer"].update(Footer())
         layout["UB_1"].update(Employee_comms())
         layout["LB_1"].update(Employee_database())
+        layout["UB2_2"].update(team_performance())
 
         if keyboard.is_pressed("q"):
             exit()
